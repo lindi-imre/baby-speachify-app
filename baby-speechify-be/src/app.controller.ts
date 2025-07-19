@@ -1,17 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Res } from '@nestjs/common';
 import { AppService } from './app.service';
+import { join } from 'path';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('kjdfnskjnfskdjnfksksdnf')
-  getHello(): string {
-    return this.appService.getHello();
+  @Get()
+  root() {
+    return 'API is running';
   }
 
-  @Get()
-  getHello2(): string {
-    return this.appService.getHello();
-  }
+  // ✅ Catch-all route for Angular frontend
+
 }
