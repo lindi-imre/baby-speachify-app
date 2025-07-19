@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "build": "npm --prefix baby-speechify-fe run build && npm --prefix baby-speechify-be run build",
+    "start": "npm --prefix baby-speechify-be run start:prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
