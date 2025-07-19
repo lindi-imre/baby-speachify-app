@@ -11,7 +11,8 @@ echo "🏗️ Building Angular app..."
 npm run build
 
 echo "📦 Installing backend dependencies..."
-cd ../baby-speechify-be
+cd ..
+cd baby-speechify-be
 npm install
 
 echo "🔨 Building NestJS app..."
