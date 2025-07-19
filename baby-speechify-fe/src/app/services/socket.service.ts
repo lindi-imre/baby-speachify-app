@@ -9,7 +9,7 @@ export class SocketService {
   private socket!: Socket;
 
   // Replace with your server URL (e.g. http://localhost:3000)
-  private readonly SERVER_URL = 'https://wss://baby-speachify-app.onrender.com:8080';
+  private readonly SERVER_URL = 'https://baby-speachify-app.onrender.com:8080';
 
   constructor() {
     this.connect();
