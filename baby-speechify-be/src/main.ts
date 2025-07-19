@@ -11,6 +11,6 @@ async function bootstrap() {
   // Serve Angular index.html for unmatched routes
   app.setBaseViewsDir(join(__dirname, '..', 'public'));
 
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(8080);
 }
 bootstrap();
