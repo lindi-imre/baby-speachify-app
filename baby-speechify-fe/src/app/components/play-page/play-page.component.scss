@@ -1,0 +1,20 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: #000;
+
+  img {
+    max-width: 70vw;  /* max 70% of viewport width */
+    max-height: 70vh; /* max 70% of viewport height */
+    object-fit: contain; /* preserve aspect ratio */
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+
+  &.transitioning img {
+    opacity: 0;
+  }
+}

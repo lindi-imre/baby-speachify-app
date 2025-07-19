@@ -1,0 +1,52 @@
+# -------------------------
+# Global Node.js ignores
+# -------------------------
+node_modules/
+dist/
+tmp/
+temp/
+.env
+.env.*.local
+*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Angular (baby-speechify-fe)
+# -------------------------
+baby-speechify-fe/node_modules/
+baby-speechify-fe/dist/
+baby-speechify-fe/.angular/
+baby-speechify-fe/.angular-cache/
+baby-speechify-fe/.env
+baby-speechify-fe/.env.*.local
+
+# VSCode project files (optional)
+baby-speechify-fe/.vscode/
+
+# -------------------------
+# NestJS (baby-speechify-be)
+# -------------------------
+baby-speechify-be/node_modules/
+baby-speechify-be/dist/
+baby-speechify-be/.env
+baby-speechify-be/.env.*.local
+
+# TypeScript cache
+baby-speechify-be/tsconfig.build.tsbuildinfo
+
+# VSCode project files (optional)
+baby-speechify-be/.vscode/
+
+# -------------------------
+# Git submodule edge case (optional cleanup)
+# -------------------------
+baby-speechify-be/.git
