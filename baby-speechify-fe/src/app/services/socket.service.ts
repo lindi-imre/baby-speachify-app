@@ -9,7 +9,7 @@ export class SocketService {
   private socket!: Socket;
 
   // Replace with your server URL (e.g. http://localhost:3000)
-  private readonly SERVER_URL = 'http://192.168.0.130:3000';
+  private readonly SERVER_URL = 'http://localhost:8080';
 
   constructor() {
     this.connect();
